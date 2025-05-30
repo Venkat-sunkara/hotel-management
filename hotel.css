@@ -1,0 +1,85 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background-image: url('https://tse2.mm.bing.net/th?id=OIP.fTU8R11pVlswtruq5puqbQHaE8&pid=Api&P=0&h=180');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+/* Room Styling */
+.room {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+/* Booking Form Styling */
+#booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#booking-form .form-group {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 20%;
+    min-width: 150px;
+}
+
+#booking-form button {
+    flex: 1 1 100%;
+    max-width: 200px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 0;
+    text-align: center;
+}
