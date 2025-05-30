@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>venkat Hotel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>venkat Hotel</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to venkat Hotel</h2>
+            <p>
+                Discover a haven of luxury and comfort in the heart of the city. venkat Hotel offers premium services, elegant rooms, and unparalleled hospitality to make your stay memorable.
+            </p>
+        </section>
+
+        <!-- Rooms Section -->
+        <section id="rooms">
+            <h2>Our Rooms</h2>
+            <div class="room">
+                <h3>Deluxe Room</h3>
+                <p>Status: <span id="deluxe-status">Checking...</span></p>
+                <button onclick="checkRoomAvailability('deluxe')">Check Availability</button>
+            </div>
+            <div class="room">
+                <h3>Suite</h3>
+                <p>Status: <span id="suite-status">Checking...</span></p>
+                <button onclick="checkRoomAvailability('suite')">Check Availability</button>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking">
+            <h2>Book Your Stay</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkin">Check-In Date:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="checkout">Check-Out Date:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="room-selection">Room Selection:</label>
+                    <select id="room-selection" name="room-selection" required>
+                        <option value="">Select a Room</option>
+                        <option value="deluxe">Deluxe Room</option>
+                        <option value="suite">Suite</option>
+                        <option value="standard">Standard Room</option>
+                    </select>
+                </div>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> venkat Avenue, Luxury City,india </p>
+            <p><strong>Email:</strong> venkat@gmail.com </p>
+            <p><strong>Helpline:</strong> +846643797</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 venkat Hotel. All Rights Reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
